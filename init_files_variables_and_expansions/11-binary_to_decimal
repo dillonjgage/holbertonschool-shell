@@ -1,2 +1,2 @@
 #!/bin/bash
-printf '%x\n' 10000000000001
+printf '%x\n' 101011
