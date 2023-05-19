@@ -1,2 +1,2 @@
 #!/bin/bash
-echo {a..z}{a..z} | grep -vm oo 64
+echo {a..z}{a..z} | grep -v oo | grep -m 64
