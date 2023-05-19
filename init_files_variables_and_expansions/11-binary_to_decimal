@@ -1,2 +1,2 @@
 #!/bin/bash
-printf '%X\n' $BINARY
+printf '%x\n' 10000000000001
