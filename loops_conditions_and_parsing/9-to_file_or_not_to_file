@@ -15,3 +15,4 @@ for school in *; do
 	if [ -f $school ]; then
 		echo "school is a regular file"
 	fi
+done
