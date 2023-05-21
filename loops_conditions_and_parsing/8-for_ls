@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Display contents in directly after the dash
+for file in *; do
+  if [ -f $file && ! $file =~ ^\..* ]; then
+    filename=$(basename "$file")
+    name_after_dash="${filename#*-}"
+    echo "$name_after_dash"
+  fi
+done
