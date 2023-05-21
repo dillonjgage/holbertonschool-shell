@@ -7,6 +7,6 @@ then
 	while (($NUM=8))
 	do
 		echo "\n Hi"
+		(($NUM++))
 	done
-	(($NUM++))
 fi
