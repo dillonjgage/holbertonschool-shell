@@ -14,5 +14,7 @@ for school in *; do
 	fi
 	if [ -f "$school" ]; then
 		echo "school is a regular file"
+	else
+		exit
 	fi
 done
