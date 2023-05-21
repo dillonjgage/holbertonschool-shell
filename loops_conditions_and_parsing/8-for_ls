@@ -3,7 +3,7 @@
 for file in *; do
 	if [ -f "$file" ]; then
 		filename=$(basename "$file")
-		name_after_dash=$(echo $filename | cut -d '-' -f2-)
-		echo $name_after_dash
+		name_after_dash=$(echo "$filename" | cut -d '-' -f2-)
+		echo "$name_after_dash"
 	fi
 done
