@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Bash script that displays the content of the file /etc/passwd, but with select fields only.
-cat /etc/passwd | while read LREAD; do
+cat < /etc/passwd | while read LREAD; do
 	if [ "$LREAD" ]; then
-		usrname_usrid_home=$(echo $LREAD | cut -d ':' -f1,3,6-)
+		usrname_usrid_home=$(echo "$LREAD" | cut -d ':' -f1,3,6-)
 		echo "$usrname_usrid_home"
 	fi
 done
