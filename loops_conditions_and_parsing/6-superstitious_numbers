@@ -3,9 +3,9 @@
 NUM=1
 while [ $NUM -le 20 ]; do
 	case $NUM in
-		4) echo -e "4\nbad luck from China";;
-		9) echo -e "9\nbad luck from Japan";;
-		17) echo -e "17\nbad luck from Italy";;
+		4) echo -e "$NUM\nbad luck from China";;
+		9) echo -e "$NUM\nbad luck from Japan";;
+		17) echo -e "$NUM\nbad luck from Italy";;
 		*) echo $NUM
 	esac
 	((NUM++))
