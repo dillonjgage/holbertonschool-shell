@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Bash script that loops from 1 to 10 with specific iterations printing a unique output
 NUM=1
 while [ $NUM -le 10 ]; do
 	if [ $NUM -eq 4 ]; then
