@@ -4,9 +4,9 @@ NUM=0
 if (($NUM<=9))
 then
 	echo "Best School"
+	(($NUM++))
 	while (($NUM=8))
 	do
 		echo "\n Hi"
-		(($NUM++))
 	done
 fi
