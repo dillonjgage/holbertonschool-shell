@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Display contents in directly after the dash
 for file in *; do
-	if [ -f $file ]; then
-		filename=$(basename $file)
+	if [ -f "$file" ]; then
+		filename=$(basename "$file")
 		name_after_dash=$(echo $filename | cut -d '-' -f2-)
 		echo $name_after_dash
 	fi
