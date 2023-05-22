@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# bash script that creates a file with its PID with various catches
+echo "echo $$" > /var/run/myscript.pid
+
