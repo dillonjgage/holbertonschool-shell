@@ -2,7 +2,7 @@
 # bash script that creates a file with its PID with various catches
 echo "echo $$" > /var/run/myscript.pid
 trap "echo Y U no love me?!" SIGINT
-trap "echo 'I hate the kill command' | rm /var/run/myscript.pid" SIGTERM
+trap "echo I hate the kill command | rm /var/run/myscript.pid" SIGTERM
 trap "rm /var/run/myscript.pid" SIGQUIT
 num=0
 while [ "$num" -ge 0 ] ; do
