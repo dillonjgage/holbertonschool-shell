@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# bash script to display output indefinitely until a signal is recieved
+trap "echo I am invincible!!!; exit" SIGTERM
+num=0
+while [ "$num" -ge 0 ] ; do
+	echo "To infinity and beyond"
+	((num++))
+	sleep 2
+done
