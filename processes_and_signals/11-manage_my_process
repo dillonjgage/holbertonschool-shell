@@ -9,7 +9,7 @@ start_process() {
         exit 1
     fi
 
-    ./$MANAGE_SCRIPT &
+    ./$MANAGE_SCRIPT >/dev/null 2>&1 &
     echo $! > "$PID_FILE"
     echo "$MANAGE_SCRIPT started"
 }
@@ -44,6 +44,5 @@ case "$1" in
         ;;
     *)
         echo "Usage: $0 {start|stop|restart}"
-        exit 1
         ;;
 esac
