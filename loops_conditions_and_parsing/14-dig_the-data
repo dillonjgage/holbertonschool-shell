@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
 # Using what you did in the previous exercise, write a Bash script that groups visitors by IP and HTTP status code, and displays this data
 log_file="apache-access.log"
-if [ -e $log_file ]; then
-	awk '{ count[$1" "$9]++ } END { for (item in count) print count[item], item }' "$log_file" | sort -rn
-fi
+awk '{print $1 " " $9}' apache-access.log | awk '{ count[$1" "$9]++ } END { for (item in count) print count[item], item }' "$log_file" | sort -rn
