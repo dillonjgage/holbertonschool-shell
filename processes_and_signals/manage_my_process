@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# bash script to indefinitely write to a file
+num=0
+while [ "$num" -ge 0 ] ; do
+	echo "I am alive!" >> /tmp/my_process
+	((num++))
+	sleep 2
+done
