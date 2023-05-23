@@ -41,8 +41,9 @@ case "$1" in
         ;;
     restart)
         restart_process
+        exit 0  # Exit with success status to prevent showing "Usage" message
         ;;
     *)
         echo "Usage: $0 {start|stop|restart}"
         ;;
-esac
+esac 
